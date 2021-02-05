@@ -37,7 +37,7 @@ body {
 
 .notfound .notfound-404 h1 {
   font-family: 'Fredoka One', cursive;
-  font-size: 50px;
+  font-size: 25px;
   margin: 0px;
   color: #ff508e;
   text-transform: uppercase;
@@ -45,8 +45,8 @@ body {
 
 .notfound h2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 200;
   color: #222;
   margin: 0;
 }
