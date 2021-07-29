@@ -4,3 +4,68 @@
 	box-sizing:border-box
 
 }
+body{
+	background-color:lightblue;
+	font-family: 'Noto Sans HK', sans-serif;
+}
+	
+
+#header{
+	background-color:gray;
+	height:50px;
+	position:sticky;
+	top:0px;
+	
+	
+	
+}
+#over{
+	height:10vh;
+	
+}
+#pic{
+	height:125px;
+	width:125px;
+	border:none;
+	outline:none;
+	border-radius:50%;
+	background-color:gray;
+	margin-bottom:30px;
+}
+hr{
+	color:lightblue;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#social{
+	margin-top:10px
+}
+social i{
+	margin-left:20px
+}
+#social a{
+	margin-left:5px;
+	text-decoration:none;
+	color:gray;
+}
+#social a:visited{
+	text-decoration:none;
+	color:gray;
+}
+#social a:hover{
+	color:#484848
+}
+#body{
+	padding:20px;
+	padding-left:10%;
+	padding-right:10%;
+	color:gray;
+	text-align:center;
+	background-color:white;
+	margin-left:5vw;
+	margin-right:5vw;
+	min-height:80vh;
+	height:fit-content;
+	
+	border-radius :10px;
+}

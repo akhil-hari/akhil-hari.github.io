@@ -1,1 +1,1 @@
-alert('The page is linked to main.js')
+//alert('The page is linked to main.js')
