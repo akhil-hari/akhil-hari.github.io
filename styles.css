@@ -4,13 +4,15 @@
 	box-sizing:border-box
 
 }
+
 body{
-	background-color:lightblue;
+	background-color:#FFAE8F;
 	font-family: 'Noto Sans HK', sans-serif;
 }
 	
 
 #header{
+	display:none;
 	background-color:gray;
 	height:50px;
 	position:sticky;
@@ -26,11 +28,18 @@ body{
 #pic{
 	height:125px;
 	width:125px;
+	object-fit: cover;
 	border:none;
 	outline:none;
 	border-radius:50%;
 	background-color:gray;
 	margin-bottom:30px;
+}
+h1{
+	color:#CD6684;
+}
+h2{
+	color:#CD6684;
 }
 hr{
 	color:lightblue;
@@ -68,4 +77,13 @@ social i{
 	height:fit-content;
 	
 	border-radius :10px;
+}
+
+.skill{
+	display:inline-block;
+	color: #CD6684;
+	background-color: #6F5A7E;
+	border-radius:10px;
+	padding:3px 10px;
+	margin: 10px 3px;
 }
