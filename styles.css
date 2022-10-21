@@ -1,4 +1,4 @@
-*{
+/* *{
 	margin:0px;
 	padding:0px;
 	box-sizing:border-box
@@ -8,6 +8,9 @@
 body{
 	background-color:#FFAE8F;
 	font-family: 'Noto Sans HK', sans-serif;
+	display:flex;
+	flex-direction: row;
+	height: 80vh;
 }
 	
 
@@ -86,4 +89,93 @@ social i{
 	border-radius:10px;
 	padding:3px 10px;
 	margin: 10px 3px;
+} */
+
+*{
+	margin: 0;
+	padding: 0;
 }
+@font-face {
+    font-family: 'Instagram Sans Medium';
+    src: local('Instagram Sans Medium'), local('Instagram-Sans-Medium'),
+        url('/assets/fonts/InstagramSans-Medium.woff2') format('woff2'),
+        url('/assets/fonts/InstagramSans-Medium.woff') format('woff'),
+        url('/assets/fonts/InstagramSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Instagram Sans';
+    src: local('Instagram Sans Regular'), local('Instagram-Sans-Regular'),
+        url('/assets/fonts/InstagramSans-Regular.woff2') format('woff2'),
+        url('/assets/fonts/InstagramSans-Regular.woff') format('woff'),
+        url('/assets/fonts/InstagramSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+body{
+	height:100vh;
+	/* min-width: 400px; */
+	font-family: 'Instagram Sans';
+	display: flex;
+	vertical-align: middle;
+	background: rgb(24,24,24);
+	background: radial-gradient(circle, rgba(24,24,24,1) 0%, rgba(207,209,210,1) 100%);
+}
+
+
+#social{
+	margin-top:10px
+}
+#social i{
+	margin-left:20px;
+	font-size:48px;
+	padding:20px;
+}
+#social a{
+	margin-left:5px;
+	text-decoration:none;
+	font-size:1.2rem;
+	color:gray;
+}
+#social a:visited{
+	text-decoration:none;
+	color:gray;
+}
+#social a:hover{
+	color:#484848;
+	text-decoration: underline;
+}
+#navbar{
+	margin-top:10px;
+	font-family: 'Instagram Sans Medium';
+	height:50px;
+	position: relative;
+	top:0px;
+	/* border: 1px solid red; */
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+}
+#navbar a{
+	color: black;
+	padding: 30px;
+	font-size:1.2rem;
+	text-decoration: none;
+}
+
+#navbar a.active{
+	color: white;
+	background-color:black;
+}
+#navbar a:hover{
+	text-decoration: underline;
+}
+
+.thirty-px-block{
+ height:30px;
+}
+.ten-px-block{
+	height:10px;
+   }
