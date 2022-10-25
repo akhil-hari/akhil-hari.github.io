@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="/main.js"></script>
 	<title>Akhil Hari</title>
 </head>
 <body>
@@ -13,10 +14,10 @@
 		<img src="/assets/pic.jpg" style="height:100%">
 		<div >
 			<div id="navbar">
-				<a class="active" href="/">About</a>
-				<a  href="/skills">Skills</a>
-				<a href="/projects">Projects</a>
-				<a href="/blogs">Blogs</a>
+				<a class="active" onclick="switchState('about')">About</a>
+				<a onclick="switchState('skills')">Skills</a>
+				<!-- <a href="/projects">Projects</a> -->
+				<!-- <a href="/blogs">Blogs</a> -->
 
 			</div>
 
@@ -29,8 +30,8 @@
 	
 					</div>
 				<br>
-					<p>
-						I
+					<p class="content">
+						I am someone who is intrested in building somthing creative.Interested in web and artificial inteligence projects
 					</p>
 					<div class="ten-px-block">
 	
@@ -38,12 +39,12 @@
 					<div id="social">.
 						<div style="display: block;">
 							<i class="fab fa-github"></i>
-							<a href="https://github.com/akhil-hari" onclick="window.open(e.href);" target="_blank">github.com/akhil-hari</a>
+							<a href="https://github.com/akhil-hari" target="_blank">github.com/akhil-hari</a>
 	
 						<!-- </div>
 						<div style="display: block;"> -->
 							<i class="fab fa-linkedin-in"></i>
-							<a href="https://www.linkedin.com/in/akhil-hari" onclick="window.open(e.href);" target="_blank">linkedin.com/in/akhil-hari</a>
+							<a href="https://www.linkedin.com/in/akhil-hari"  target="_blank">linkedin.com/in/akhil-hari</a>
 	
 						</div>
 						
@@ -58,6 +59,18 @@
 		</div>
 
 	</div>
+
+	<script>
+		function loadState() {
+			let params = new URLSearchParams(window.location.search);
+			let state = params.get("state")
+			if(state){
+				switchState(state);
+			}
+    
+	}
+	loadState();
+	</script>
 	
 </body>
 </html>

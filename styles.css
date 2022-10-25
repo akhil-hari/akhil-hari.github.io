@@ -163,9 +163,12 @@ body{
 	padding: 30px;
 	font-size:1.2rem;
 	text-decoration: none;
+	user-select: none;
+	cursor: pointer;
 }
 
 #navbar a.active{
+	
 	color: white;
 	background-color:black;
 }
@@ -179,3 +182,6 @@ body{
 .ten-px-block{
 	height:10px;
    }
+.content{
+	font-size: 1.3rem;
+}
