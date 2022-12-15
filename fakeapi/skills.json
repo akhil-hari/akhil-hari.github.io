@@ -1,0 +1,10 @@
+[
+    {
+        "skill": "Python",
+        "icon": "https://docs.python.org/favicon.ico"
+    },
+    {
+        "skill": "Javascript",
+        "icon": "/assets/logos/js.png"
+    }
+]

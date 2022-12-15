@@ -11,18 +11,16 @@
 </head>
 <body>
 	<div style="display:flex;flex-direction:row;height:80vh;width:90vw;margin:auto; overflow:hidden;border-radius:30px;background-color:white;">
-		<img src="/assets/pic.jpg" style="height:100%">
-		<div >
-			<div id="navbar">
-				<a class="active" onclick="switchState('about')">About</a>
-				<a onclick="switchState('skills')">Skills</a>
+		<img id="left-img" src="/assets/pic.jpg" style="height:100%">
+		<div  >
+			<div id="navbar" style="justify-content: center">
+				<a class="active" onclick="switchState('about', event)">About</a>
+				<a onclick="switchState('skills', event)">Skills</a>
 				<!-- <a href="/projects">Projects</a> -->
 				<!-- <a href="/blogs">Blogs</a> -->
-
 			</div>
-
-			<div style="display:flex;flex-direction:row ; vertical-align:middle;height:100%">
-				<div style="display:flex;flex-direction:column;text-align: center;height:100%;padding:3vw;min-width: 700px;margin:auto;">
+			<div id="about-tab" style="display:flex;flex-direction:row ; vertical-align:middle;height:100%">
+				<div style="display:flex;flex-direction:column;text-align: center;height:100%;padding:3vw;min-width: 40vw;margin:auto;">
 					<h1 style="font-family: 'Instagram Sans Medium';">Akhil Hari</h1>
 					<p style="color: gray">Python Developer|Full Stack Developer|Ai&ML Enthusiast</p>
 					<br>
@@ -41,8 +39,6 @@
 							<i class="fab fa-github"></i>
 							<a href="https://github.com/akhil-hari" target="_blank">github.com/akhil-hari</a>
 	
-						<!-- </div>
-						<div style="display: block;"> -->
 							<i class="fab fa-linkedin-in"></i>
 							<a href="https://www.linkedin.com/in/akhil-hari"  target="_blank">linkedin.com/in/akhil-hari</a>
 	
@@ -56,7 +52,13 @@
 			</div>
 
 			</div>
+			<div id="skills-tab" style="display:none;flex-direction:row ; vertical-align:middle;height:100%;">
+				<div style="display:flex;flex-direction:column;text-align: center;height:100%;padding:3vw;min-width: 40vw;margin:auto;">
+				</div>
+			
+			</div>
 		</div>
+		
 
 	</div>
 

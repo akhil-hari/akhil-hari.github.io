@@ -155,6 +155,7 @@ body{
 	top:0px;
 	/* border: 1px solid red; */
 	width: 100%;
+	max-width: 40vw;
 	z-index: 100;
 	text-align: center;
 }
