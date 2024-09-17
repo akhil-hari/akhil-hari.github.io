@@ -11423,7 +11423,7 @@ pre {
 }
 
 .page-footer {
-  background: #fcfdff;
+  background: black;
 }
 
 .page-footer .row {
@@ -11458,7 +11458,7 @@ pre {
 .header {
   height: 94vh;
   min-height: 650px;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #20c20e;;
 }
 
 .header .container {
@@ -11636,7 +11636,7 @@ pre {
 }
 
 .section:nth-child(even) {
-  background: white;
+  background: black;
 }
 
 .section.bg-white {
@@ -11644,5 +11644,5 @@ pre {
 }
 
 .section.bg-gray {
-  background: white;
+  background: black;
 }
